@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%; /*  largura ocupada no monitor */
+    min-height: 100vh; /* 100% ViewHeight a altura visivel do monitor */
+    background-image: url(Images/testimage.jpg);  
+    background-position: center;  /* onde o centro da imagem será posicionada */
+    background-size: cover;  /* cobre a tela inteira */
+    display: flex; 
+    align-items: center;  /* alinha no meio vertical */
+    justify-content: center; /* alinha no meio horizontal */
+}
+
+.search-bar{
+    width: 100%;
+    height: 70px;
+    max-width: 700px; /*quantidade maxima de pixels de largura */
+    background: rgba(255, 255, 255, 0.2);
+    display: flex; /* determina o tipo de flexbox que é criada
+     podem se posicionar em qualquer direção e pode ter dimensões flexíveis para se adaptar. */
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white; /*o cursor e input do usuário dentro da barra de pesquisa*/
+}
+
+::placeholder{
+    color: white; /*a mensagem digite aqui etc*/
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius:50%; /*o quao redonda a borda é     background: #103353;*/
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: rgba(44, 42, 42, 0.2);
+}
+
+.button{
+    position: absolute;
+    border: none;
+    width: 100px;
+    height: 60px;
+    background-color: #103353;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.Google{
+    background-color: #103353;
+    color: white;
+    right: 140px;
+    top: 30px;
+}
+
+.Google:hover{
+    background-color: #4682B4;
+    color: black;
+    opacity: 1;
+}
+
+.AdvancedSearch{
+    background-color: #103353;
+    color: white;
+    right: 20px;
+    top: 30px;
+}
+
+.AdvancedSearch:hover{
+    background-color: #4682B4;
+    color: black;
+    opacity: 1;
+}

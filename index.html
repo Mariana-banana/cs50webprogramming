@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Table</title>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Google Search</title>
+        <link rel="stylesheet" href="styleIndex.css">
     </head>
     <body>
-        <table>
-            <thead>
-                <tr>
-                    <th>Pessoa</th>
-                    <th>Altura</th>
-                    <th>Cor de Cabelo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pedro</td>
-                    <td>170</td>
-                    <td>Castanho Claro</td>
-                </tr>
-                <tr>
-                    <td>Mariana</td>
-                    <td>165</td>
-                    <td>Loiro</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="container">
+            <form action="https://www.google.com/search" method="get" class="search-bar">
+                <input type="text" placeholder="Pesquise no Google ou digite um URL" name="q">
+                <button type="submit"><img src="Images/search.png"></button>
+            </form>
+            <div class="ChangePage">
+                <form action="http://127.0.0.1:5500/cs50webprogramming/googleImage.html" method="get" class="GoogleImage">
+                <button class="button GoogleImage">Google Images</button>
+                </form>
+                <form action="http://127.0.0.1:5500/cs50webprogramming/advancedSearch.html" method="get" class="AdvancedSearch">
+                    <button class="button AdvancedSearch">Advanced Search</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

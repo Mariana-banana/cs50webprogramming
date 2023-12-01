@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Google Image Search</title>
+        <link rel="stylesheet" href="styleImage.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="http://images.google.com/images" method="get" class="search-bar">
+                <input type="text" placeholder="Procure o nome de uma imagem" name="q">
+                <button type="submit"><img src="Images/search.png"></button>
+            </form>
+            <div class="ChangePage">
+                <form action="http://127.0.0.1:5500/cs50webprogramming/index.html" method="get" class="Google">
+                <button class="button Google">Google Search</button>
+                </form>
+                <form action="http://127.0.0.1:5500/cs50webprogramming/advancedSearch.html" method="get" class="AdvancedSearch">
+                    <button class="button AdvancedSearch">Advanced Search</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
